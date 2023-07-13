@@ -12,7 +12,9 @@ from fabric.api import local, runs_once
 
 @runs_once
 def do_pack():
+
     """Archives the static files."""
+
     if not os.path.isdir("versions"):
         os.mkdir("versions")
     d_time = datetime.now()
